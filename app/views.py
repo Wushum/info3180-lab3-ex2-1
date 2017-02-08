@@ -54,8 +54,8 @@ def sendemail(fromname,fromemail,fromsubject,msg):
                                  msg)
     
     # Credentials (if needed)
-    username = 'leon.facey@gmail.com'
-    password = 'efchjiqlpsmrurvx'
+    username = ''
+    password = ''
     
     # The actual mail send
     server = smtplib.SMTP('smtp.gmail.com:587')
@@ -69,7 +69,7 @@ def sendemail(fromname,fromemail,fromsubject,msg):
 @app.route('/about/')
 def about():
     """Render the website's about page."""
-    return render_template('about.html', name="Mary Jane")
+    return render_template('about.html', name="John Brown")
 
 
 ###
